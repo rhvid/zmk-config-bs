@@ -30,8 +30,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
+                <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>,
+                <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
         lower_layer {
