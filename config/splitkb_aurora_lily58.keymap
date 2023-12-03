@@ -52,16 +52,16 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans          &trans         &trans    &trans
-&kp F1      &kp F2            &kp F3             &kp F4             &kp F5        &kp F6                          &kp F7     &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &kp F11   &kp F12
-&kp GRAVE   &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp RPAR  &kp TILDE
-&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC  &kp PIPE
-                                                 &trans             &trans        &trans        &trans    &trans  &trans     &trans    &trans
+&bt BT_CLR      &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans          &trans         &trans    &trans
+&kp F1          &kp F2            &kp F3             &kp F4             &kp F5        &kp F6                          &kp F7     &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &kp F11   &kp F12
+&kp LEFT_SHIFT  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp RPAR  &kp TILDE
+&trans          &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC  &kp PIPE
+                                                     &trans             &trans        &trans        &trans    &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+                <&inc_dec_kp UP_ARROW DOWN>;
         };
 
         raise_layer {
