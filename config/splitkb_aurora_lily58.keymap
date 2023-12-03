@@ -29,9 +29,7 @@
                             &kp LEFT_BRACKET  &kp LEFT_ALT  &mo 1   &kp SPACE     &kp RET    &mo 2   &kp BSPC  &kp RIGHT_BRACKET
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
+            sensor-bindings = <&inc_dec_kp U D>, <&inc_dec_kp U D>;
         };
 
         lower_layer {
