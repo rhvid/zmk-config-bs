@@ -41,7 +41,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "AE";
-            tap-ms = <0>;
+            tap-ms = <1>;
+            wait-ms = <0>;
         };
 
         AE_: AE_ {
@@ -56,6 +57,7 @@
                 <&kp RIGHT_ALT>;
 
             label = "AE_";
+            tap-ms = <1>;
         };
     };
 
