@@ -18,10 +18,28 @@
             bindings = <&none>, <&none>;
         };
 
-        eao: eao {
+        ea_m: ea_m {
             compatible = "zmk,behavior-mod-morph";
-            label = "EAO";
+            label = "EA_M";
             bindings = <&ae>, <&AE_>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        oe_m: oe_m {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OE_M";
+            bindings = <&oe>, <&OE_>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        aa_m: aa_m {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AA_M";
+            bindings = <&aa>, <&AA_>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -59,6 +77,68 @@
             label = "AE_";
             tap-ms = <1>;
         };
+
+        oe: oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_N4 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "OE";
+            tap-ms = <1>;
+        };
+
+        OE_: OE_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "OE_";
+            tap-ms = <1>;
+        };
+
+        aa: aa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "AA";
+            tap-ms = <1>;
+            wait-ms = <0>;
+        };
+
+        AA_: AA_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "AA_";
+            tap-ms = <1>;
+            wait-ms = <0>;
+        };
     };
 
     keymap {
@@ -73,11 +153,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                                     &kp N6  &kp N7    &kp N8             &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W   &kp E             &kp R         &kp T                                                      &kp Y   &kp U     &kp I              &kp O    &kp P     &AE_
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D             &kp F         &kp G                                                      &kp H   &kp J     &kp K              &kp L    &eao      &kp SQT
-&kp LCTRL       &kp Z   &kp X   &kp C             &kp V         &kp B   &kp C_MUTE              &kp LC(W)                  &kp N   &kp M     &kp COMMA          &kp DOT  &kp FSLH  &kp ENTER
-                                &kp LEFT_BRACKET  &kp LEFT_ALT  &mo 1   &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT BACKSPACE  &mo 2   &kp LGUI  &kp RIGHT_BRACKET
+&kp ESC         &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                         &kp N6  &kp N7    &kp N8             &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q   &kp W   &kp E             &kp R         &kp T                                          &kp Y   &kp U     &kp I              &kp O    &kp P     &AE_
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D             &kp F         &kp G                                          &kp H   &kp J     &kp K              &kp L    &ea_m     &kp SQT
+&kp LCTRL       &kp Z   &kp X   &kp C             &kp V         &kp B   &kp C_MUTE              &kp LC(W)      &kp N   &kp M     &kp COMMA          &kp DOT  &kp FSLH  &kp ENTER
+                                &kp LEFT_BRACKET  &kp LEFT_ALT  &mo 1   &mt LEFT_SHIFT SPACE    &kp BACKSPACE  &mo 2   &kp LGUI  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings =
