@@ -11,7 +11,7 @@
 
 / {
     sensors {
-        triggers-per-rotation = <18>;
+        triggers-per-rotation = <24>;
     };
 
     behaviors {
