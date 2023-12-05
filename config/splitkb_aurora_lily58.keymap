@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    &sensors {
+    sensors {
         triggers-per-rotation = <18>;
     };
 
