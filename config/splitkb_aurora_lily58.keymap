@@ -10,16 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    &sensors {
-        left_config {
-            triggers-per-rotation = <24>;
-        };
-
-        right_config {
-            triggers-per-rotation = <24>;
-        };
-    };
-
     behaviors {
         new_behavior: new_behavior {
             compatible = "zmk,behavior-sensor-rotate-var";
