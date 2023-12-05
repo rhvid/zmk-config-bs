@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    
     &sensors {
         left_config {
             triggers-per-rotation = <24>;
@@ -26,7 +25,9 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "NEW_BEHAVIOR";
             #sensor-binding-cells = <2>;
-            bindings = <&none>, <&none>;&
+            bindings = <&none>, <&none>;
+
+            &
         };
 
         ea_m: ea_m {
@@ -208,7 +209,7 @@
             bindings = <
 &trans     &trans    &trans     &trans        &trans  &trans                            &trans       &kp N7        &kp N8  &kp N9     &trans     &trans
 &kp GRAVE  &kp N1    &kp N2     &kp LS(RPAR)  &kp N4  &kp N5                            &trans       &kp NUMBER_4  &kp N5  &kp N6     &kp PLUS   &trans
-&trans     &kp PLUS  &kp MINUS  &kp FSLH      &kp F5  &kp F6                            &trans       &kp N1        &kp N2  &kp N3     &kp MINUS  &trans
+&trans     &kp PLUS  &kp MINUS  &kp FSLH      &kp F5  &trans                            &trans       &kp N1        &kp N2  &kp N3     &kp MINUS  &trans
 &trans     &trans    &trans     &trans        &trans  &trans  &trans            &trans  &kp KP_PLUS  &kp N0        &kp N0  &kp COMMA  &kp RBKT   &trans
                                 &trans        &trans  &trans  &kp UNDERSCORE    &trans  &trans       &trans        &trans
             >;
