@@ -54,6 +54,8 @@
             label = "JUMP5";
             #sensor-binding-cells = <0>;
             bindings = <&down5>, <&up5>;
+
+            tap-ms = <1>;
         };
     };
 
