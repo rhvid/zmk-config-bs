@@ -48,6 +48,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        jump5: jump5 {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "JUMP5";
+            #sensor-binding-cells = <0>;
+            bindings = <&down5>, <&up5>;
+        };
     };
 
     macros {
@@ -199,7 +206,7 @@
                                 &trans        &trans  &trans  &kp UNDERSCORE    &trans  &trans       &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&jump5>;
         };
     };
 };
