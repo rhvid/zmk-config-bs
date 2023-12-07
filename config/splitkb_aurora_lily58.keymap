@@ -12,12 +12,12 @@
 / {
     left_encoder: encoder_left {
         compatible = "alps,ec11";
-        resolution = <4>;
+        steps = <96>;
     };
 
     right_encoder_encoder: encoder_left {
         compatible = "alps,ec11";
-        resolution = <4>;
+        steps = <96>;
     };
 
     sensors {
