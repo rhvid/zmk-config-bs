@@ -12,7 +12,7 @@
 / {
     sensors {
         triggers-per-rotation = <24>;
-        step = <24>;
+        steps = <24>;
     };
 
     behaviors {
