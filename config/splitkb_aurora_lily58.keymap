@@ -10,9 +10,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 &left_encoder {
+    compatible = "alps,ec11";
     steps = <96>;
 };
 &right_encoder {
+    compatible = "alps,ec11";
     steps = <96>;
 };
 
