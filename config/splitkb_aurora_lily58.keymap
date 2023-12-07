@@ -9,6 +9,13 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
+&left_encoder {
+    steps = <96>;
+};
+&right_encoder {
+    steps = <96>;
+};
+
 / {
     sensors {
         compatible = "zmk,keymap-sensors";
@@ -171,12 +178,6 @@
     };
 
     keymap {
-        &left_encoder {
-            steps = <96>;
-        };
-        &right_encoder {
-            steps = <96>;
-        };
         compatible = "zmk,keymap";
 
         default_layer {
