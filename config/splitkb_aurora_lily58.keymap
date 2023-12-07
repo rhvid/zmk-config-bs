@@ -15,7 +15,7 @@
         steps = <96>;
     };
 
-    right_encoder: right_encoder {
+    right_encoder: encoder_right {
         compatible = "alps,ec11";
         steps = <96>;
     };
