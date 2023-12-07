@@ -16,12 +16,12 @@
     steps = <96>;
 };
 
-/ {
-    sensors {
+&sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
-    };
+};
 
+/ {
     behaviors {
         new_behavior: new_behavior {
             compatible = "zmk,behavior-sensor-rotate-var";
