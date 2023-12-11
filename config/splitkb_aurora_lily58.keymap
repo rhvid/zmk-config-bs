@@ -184,10 +184,10 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                               &kp N6  &kp N7    &kp N8             &kp N9   &kp N0    &kp PLUS
-&kp TAB         &kp Q   &kp W   &kp E             &kp R         &kp T                                &kp Y   &kp U     &kp I              &kp O    &kp P     &aa_m
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D             &kp F         &kp G                                &kp H   &kp J     &kp K              &kp L    &ea_m     &oe_m
-&kp LCTRL       &kp Z   &kp X   &kp C             &kp V         &kp B   &kp C_MUTE    &kp LC(W)      &kp N   &kp M     &kp COMMA          &kp DOT  &kp FSLH  &kp ENTER
+                &kp ESC         &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                               &kp N6  &kp N7    &kp N8             &kp N9   &kp N0    &kp PLUS
+                &kp TAB         &kp Q   &kp W   &kp E             &kp R         &kp T                                &kp Y   &kp U     &kp I              &kp O    &kp P     &aa_m
+                &kp LEFT_SHIFT  &kp A   &kp S   &kp D             &kp F         &kp G                                &kp H   &kp J     &kp K              &kp L    &ea_m     &oe_m
+                &kp LCTRL       &kp Z   &kp X   &kp C             &kp V         &kp B   &kp C_MUTE    &kp LC(W)      &kp N   &kp M     &kp COMMA          &kp DOT  &kp FSLH  &kp ENTER
                                 &kp LEFT_BRACKET  &kp LEFT_ALT  &mo 1   &kp SPACE     &kp BACKSPACE  &mo 2   &kp LGUI  &kp RIGHT_BRACKET
             >;
 
@@ -198,10 +198,22 @@
 
         lower_layer {
             bindings = <
-&kp F1      &kp F1            &kp F2             &kp F3             &kp F4        &kp F5                          &kp F6     &kp F7    &kp F8          &kp F9         &kp F10   &trans
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &kp F7     &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &kp F11   &kp F12
-&kp DELETE  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp RPAR  &kp TILDE
-&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC  &kp PIPE
+                &ext_power EP_TOG  &trans    &trans     &trans        &trans  &trans                            &trans       &kp N7        &kp N8  &kp N9     &trans     &trans
+                &kp GRAVE          &kp N1    &kp N2     &kp LS(RPAR)  &kp N4  &kp N5                            &trans       &kp NUMBER_4  &kp N5  &kp N6     &kp PLUS   &trans
+                &trans             &kp PLUS  &kp MINUS  &kp FSLH      &kp F5  &trans                            &trans       &kp N1        &kp N2  &kp N3     &kp MINUS  &trans
+                &trans             &trans    &trans     &trans        &trans  &trans  &trans            &trans  &kp KP_PLUS  &kp N0        &kp N0  &kp COMMA  &kp RBKT   &trans
+                                        &trans        &trans  &trans  &kp UNDERSCORE    &trans  &trans       &trans        &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&jump5>;
+        };
+
+        raise_layer {
+            bindings = <
+                &kp F1      &kp F1            &kp F2             &kp F3             &kp F4        &kp F5                          &kp F6     &kp F7    &kp F8          &kp F9         &kp F10   &trans
+                &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &kp F7     &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &kp F11   &kp F12
+                &kp DELETE  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp RPAR  &kp TILDE
+                &trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC  &kp PIPE
                                                  &trans             &trans        &trans        &trans    &trans  &trans     &trans    &trans
             >;
 
@@ -209,17 +221,6 @@
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp UP_ARROW DOWN>;
         };
-
-        raise_layer {
-            bindings = <
-&ext_power EP_TOG  &trans    &trans     &trans        &trans  &trans                            &trans       &kp N7        &kp N8  &kp N9     &trans     &trans
-&kp GRAVE          &kp N1    &kp N2     &kp LS(RPAR)  &kp N4  &kp N5                            &trans       &kp NUMBER_4  &kp N5  &kp N6     &kp PLUS   &trans
-&trans             &kp PLUS  &kp MINUS  &kp FSLH      &kp F5  &trans                            &trans       &kp N1        &kp N2  &kp N3     &kp MINUS  &trans
-&trans             &trans    &trans     &trans        &trans  &trans  &trans            &trans  &kp KP_PLUS  &kp N0        &kp N0  &kp COMMA  &kp RBKT   &trans
-                                        &trans        &trans  &trans  &kp UNDERSCORE    &trans  &trans       &trans        &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&jump5>;
-        };
+        
     };
 };
