@@ -253,7 +253,7 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3            &kp N4          &kp N5                               &kp N6  &kp N7    &kp N8               &kp N9            &kp N0    &kp PLUS
+&kp ESC         &kp N1  &kp N2  &kp N3            &kp N4          &kp N5                               &kp N6  &kp N7    &kp N8               &kp N9            &kp N0    &kp EQUAL
 &kp TAB         &kp Q   &kp W   &kp E             &kp R           &kp T                                &kp Y   &kp U     &kp I                &kp O             &kp P     &aa_m
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D             &kp F           &kp G                                &kp H   &kp J     &kp K                &kp L             &ea_m     &oe_m
 &kp LCTRL       &kp Z   &kp X   &kp C             &kp V           &kp B   &kp C_MUTE    &kp LC(W)      &kp N   &kp M     &mt SEMICOLON COMMA  &mt COLON PERIOD  &kp FSLH  &kp ENTER
@@ -267,11 +267,11 @@
 
         lower_layer {
             bindings = <
-&ext_power EP_TOG  &trans    &trans     &trans        &trans  &trans                                &trans       &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE          &kp N1    &kp N2     &kp LS(RPAR)  &kp N4  &kp N5                                &trans       &kp NUMBER_4  &kp N5  &kp N6  &kp PLUS              &kp LCTRL
-&trans             &kp PLUS  &kp MINUS  &kp FSLH      &kp F5  &trans                                &trans       &kp N1        &kp N2  &kp N3  &kp MINUS             &kp STAR
-&trans             &trans    &trans     &trans        &trans  &trans  &trans            &trans      &kp KP_PLUS  &kp N0        &trans  &trans  &trans                &trans
-                                        &trans        &trans  &trans  &kp UNDERSCORE    &kp DELETE  &trans       &trans        &trans
+&ext_power EP_TOG  &trans                          &trans     &trans        &trans  &trans                                &trans       &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans             &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp N2     &kp LS(RPAR)  &kp N4  &kp N5                                &trans       &kp NUMBER_4  &kp N5  &kp N6  &kp PLUS              &kp LCTRL
+&trans             &kp PLUS                        &kp MINUS  &kp FSLH      &kp F5  &trans                                &trans       &kp N1        &kp N2  &kp N3  &kp MINUS             &kp STAR
+&trans             &trans                          &trans     &trans        &trans  &trans  &trans            &trans      &kp KP_PLUS  &kp N0        &trans  &trans  &trans                &trans
+                                                              &trans        &trans  &trans  &kp UNDERSCORE    &kp DELETE  &trans       &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&jump5>;
