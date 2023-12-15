@@ -300,7 +300,7 @@
 
         layer_3 {
             bindings = <
-&trans  &mkp MB1  &mkp MB2  &mkp MB3  &mkp MB4  &mkp MB5                       &mkp MB6  &mkp MB7  &mkp MB8  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans    &trans    &kp LC(W)  &trans    &trans    &trans    &trans  &trans  &trans
