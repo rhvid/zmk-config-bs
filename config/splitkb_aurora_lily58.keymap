@@ -4,8 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-// test
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
@@ -290,10 +288,10 @@
 
         raise_layer {
             bindings = <
-&trans      &kp F1            &kp F2             &kp F3             &kp F4         &kp F5                          &kp F6     &kp F7    &kp F8          &kp F9         &kp F10    &trans
-&bt BT_CLR  &bt BT_SEL 0      &kp LG(D)          &kp LG(UP)         &kp LG(TAB)    &bt BT_SEL 4                    &kp F7     &kp HOME  &kp UP_ARROW    &kp END        &kp PG_UP  &kp F12
-&trans      &kp EXCL          &kp LG(LEFT)       &kp LG(DOWN)       &kp LG(RIGHT)  &kp PRCNT                       &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &kp TILDE
-&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans         &trans        &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC   &kp PIPE
+                &trans      &kp F1            &kp F2             &kp F3             &kp F4         &kp F5                          &kp F6     &kp F7    &kp F8          &kp F9         &kp F10    &trans
+                &bt BT_CLR  &bt BT_SEL 0      &kp LG(D)          &kp LG(UP)         &kp LG(TAB)    &bt BT_SEL 4                    &kp F7     &kp HOME  &kp UP_ARROW    &kp END        &kp PG_UP  &kp F12
+                &trans      &kp EXCL          &kp LG(LEFT)       &kp LG(DOWN)       &kp LG(RIGHT)  &kp PRCNT                       &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &kp TILDE
+                &trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans         &trans        &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC   &kp PIPE
                                                  &trans             &trans         &trans        &trans    &trans  &trans     &trans    &trans
             >;
 
