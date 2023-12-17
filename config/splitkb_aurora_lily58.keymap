@@ -67,15 +67,6 @@
             mods = <(MOD_LSFT)>;
         };
 
-        jump5: jump5 {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "JUMP5";
-            #sensor-binding-cells = <0>;
-            bindings = <&down5>, <&up5>;
-
-            tap-ms = <1>;
-        };
-
         change_win: change_win {
             compatible = "zmk,behavior-sensor-rotate";
             label = "CHANGE_WIN";
@@ -269,7 +260,7 @@
                                                                                    &trans           &trans    &trans            &kp UNDERSCORE    &kp DELETE  &trans         &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&jump5>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&none>;
         };
 
         raise_layer {
