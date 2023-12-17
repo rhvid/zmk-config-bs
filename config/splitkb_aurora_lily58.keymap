@@ -12,6 +12,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/mouse.h>
 
+
 &led_strip {
     chain-length = <29>;
 };
@@ -96,6 +97,36 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_5>,
                 <&macro_release>,
                 <&kp RIGHT_ALT>;
+        };
+    };
+
+    leds {
+        toggle_led: toggle_led {
+            compatible = "zmk,behavior-custom-led";
+            label = "TOGGLE_LED";
+            #binding-cells = <1>;
+            bindings = <&toggle_led_binding>;
+        };
+
+        toggle_led_binding: toggle_led_binding {
+            led = <&led_strip>;
+            index = <0>; // Replace with the index of the LED you want to toggle
+        };
+
+        // Add the function to toggle on/off a single LED
+        toggle_single_led: toggle_single_led {
+            compatible = "zmk,behavior-custom-led";
+            label = "TOGGLE_SINGLE_LED";
+            #binding-cells = <1>;
+            bindings = <&toggle_single_led_binding>;
+        };
+
+        toggle_single_led_binding: toggle_single_led_binding {
+            led = <&led_strip>;
+            index = <1>; // Replace with the index of the LED you want to toggle
+        };
+    };
+};
 
             label = "AE";
             tap-ms = <1>;
