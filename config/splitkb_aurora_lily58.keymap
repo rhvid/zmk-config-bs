@@ -5,18 +5,15 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/mouse.h>
-
-
 
 &led_strip {
     chain-length = <29>;
-};    
+};
 
 &left_encoder {
     compatible = "alps,ec11";
@@ -36,13 +33,6 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "NEW_BEHAVIOR";
-            #sensor-binding-cells = <2>;
-            bindings = <&none>, <&none>;
-        };
-
         ea_m: ea_m {
             compatible = "zmk,behavior-mod-morph";
             label = "EA_M";
@@ -70,15 +60,6 @@
             mods = <(MOD_LSFT)>;
         };
 
-        jump5: jump5 {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "JUMP5";
-            #sensor-binding-cells = <0>;
-            bindings = <&down5>, <&up5>;
-
-            tap-ms = <1>;
-        };
-
         change_win: change_win {
             compatible = "zmk,behavior-sensor-rotate";
             label = "CHANGE_WIN";
@@ -100,8 +81,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "AE";
-            tap-ms = <1>;
-            wait-ms = <0>;
+            tap-ms = <40>;
+            wait-ms = <40>;
         };
 
         AE_: AE_ {
@@ -116,7 +97,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "AE_";
-            tap-ms = <1>;
+            tap-ms = <40>;
+            wait-ms = <40>;
         };
 
         oe: oe {
@@ -131,7 +113,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "OE";
-            tap-ms = <1>;
+            tap-ms = <40>;
+            wait-ms = <40>;
         };
 
         OE_: OE_ {
@@ -146,7 +129,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "OE_";
-            tap-ms = <1>;
+            tap-ms = <40>;
+            wait-ms = <40>;
         };
 
         aa: aa {
@@ -161,8 +145,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "AA";
-            tap-ms = <1>;
-            wait-ms = <0>;
+            tap-ms = <40>;
+            wait-ms = <40>;
         };
 
         AA_: AA_ {
@@ -177,22 +161,8 @@
                 <&kp RIGHT_ALT>;
 
             label = "AA_";
-            tap-ms = <1>;
-            wait-ms = <0>;
-        };
-
-        down5: down5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW>;
-            label = "DOWN5";
-        };
-
-        up5: up5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW>;
-            label = "UP5";
+            tap-ms = <40>;
+            wait-ms = <40>;
         };
 
         next_win: next_win {
@@ -255,16 +225,9 @@
                 <&macro_release>,
                 <&mo MACRO_PLACEHOLDER>;
         };
-
-        light: light {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bl BL_SET 100>;
-            label = "LIGHT";
-        };
     };
 
-     keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
@@ -282,13 +245,14 @@
         };
 
         lower_layer {
-            bindings = <
+           bindings = <
 &ext_power EP_TOG  &trans                          &trans                          &trans           &trans    &trans                                  &trans         &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans             &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp N2                          &kp LS(RPAR)     &kp N4    &kp TILDE                               &trans         &kp NUMBER_4  &kp N5  &kp N6  &kp PLUS              &kp LCTRL
 &trans             &kp GRAVE                       &kp UNDER                       &kp FSLH         &trans    &kp GREATER_THAN                        &kp LESS_THAN  &kp N1        &kp N2  &kp N3  &kp MINUS             &kp STAR
 &rgb_ug RGB_TOG    &rgb_ug RGB_EFF                 &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_BRI  &kp PIPE  &kp BACKSLASH     &trans    &trans      &kp KP_PLUS    &kp N0        &trans  &trans  &trans                &trans
                                                                                    &trans           &trans    &trans            &trans    &kp DELETE  &trans         &trans        &trans
             >;
+
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&none>;
         };
