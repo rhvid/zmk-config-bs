@@ -281,7 +281,7 @@
 
         lower_layer {
             bindings = <
-&ext_power EP_TOG  &bt BT_SEL 0                    &bt BT_SEL 1                    &bt BT_SEL 2  &trans    &trans                                       &trans       &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&ext_power EP_TOG  &bt BT_SEL 0                    &bt BT_SEL 1                    &bt BT_SEL 2  &trans    &bt BT_CLR                                   &trans       &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &rgb_ug RGB_BRI    &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp PRINTSCREEN                 &kp LS(RPAR)  &kp N4    &kp N5                                       &trans       &kp NUMBER_4  &kp N5  &kp N6  &kp PLUS              &kp LCTRL
 &rgb_ug RGB_BRD    &kp GRAVE                       &kp ESC                         &kp FSLH      &trans    &kp LESS_THAN                                &trans       &kp N1        &kp N2  &kp N3  &kp MINUS             &kp STAR
 &rgb_ug RGB_TOG    &rgb_ug RGB_EFF                 &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans        &kp PIPE  &kp BACKSLASH  &trans            &trans      &kp KP_PLUS  &kp N0        &trans  &trans  &trans                &trans
