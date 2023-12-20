@@ -250,6 +250,13 @@
             bindings = <&bl BL_SET 100>;
             label = "LIGHT";
         };
+
+        apos: apos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>;
+            label = "APOS";
+        };
     };
 
     keymap {
@@ -257,7 +264,7 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4      &kp N5                           &kp N6  &kp N7         &kp N8               &kp N9            &kp N0    &kp SQT
+&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4      &kp N5                           &kp N6  &kp N7         &kp N8               &kp N9            &kp N0    &apos
 &kp TAB         &kp Q   &kp W   &kp E         &kp R       &kp T                            &kp Y   &kp U          &kp I                &kp O             &kp P     &aa_m
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F       &kp G                            &kp H   &kp J          &kp K                &kp L             &ea_m     &oe_m
 &kp LCTRL       &kp Z   &kp X   &kp C         &kp V       &kp B   &kp C_MUTE    &kp LC(W)  &kp N   &kp M          &mt SEMICOLON COMMA  &mt COLON PERIOD  &kp FSLH  &kp BACKSPACE
