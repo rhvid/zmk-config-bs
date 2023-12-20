@@ -16,16 +16,6 @@
     chain-length = <29>;
 };
 
-&left_encoder {
-    compatible = "alps,ec11";
-    steps = <36>;
-};
-
-&right_encoder {
-    compatible = "alps,ec11";
-    steps = <36>;
-};
-
 &sensors {
     compatible = "zmk,keymap-sensors";
     sensors = <&left_encoder &right_encoder>;
