@@ -18,18 +18,18 @@
 
 &left_encoder {
     compatible = "alps,ec11";
-    steps = <96>;
+    steps = <36>;
 };
 
 &right_encoder {
     compatible = "alps,ec11";
-    steps = <96>;
+    steps = <36>;
 };
 
 &sensors {
     compatible = "zmk,keymap-sensors";
     sensors = <&left_encoder &right_encoder>;
-    triggers-per-rotation = <24>;
+    triggers-per-rotation = <36>;
 };
 
 / {
