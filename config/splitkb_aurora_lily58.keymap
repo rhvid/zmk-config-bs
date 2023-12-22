@@ -24,55 +24,6 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "NEW_BEHAVIOR";
-            #sensor-binding-cells = <2>;
-            bindings = <&none>, <&none>;
-        };
-
-        ea_m: ea_m {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EA_M";
-            bindings = <&ae>, <&AE_>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        oe_m: oe_m {
-            compatible = "zmk,behavior-mod-morph";
-            label = "OE_M";
-            bindings = <&oe>, <&OE_>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        aa_m: aa_m {
-            compatible = "zmk,behavior-mod-morph";
-            label = "AA_M";
-            bindings = <&aa>, <&AA_>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        jump5: jump5 {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "JUMP5";
-            #sensor-binding-cells = <0>;
-            bindings = <&down5>, <&up5>;
-
-            tap-ms = <1>;
-        };
-
-        change_win: change_win {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "CHANGE_WIN";
-            #sensor-binding-cells = <0>;
-            bindings = <&prev_win>, <&next_win>;
-        };
     };
 
     macros {
@@ -292,7 +243,7 @@
                                                  &trans             &trans         &trans         &trans    &trans  &trans     &trans    &trans
             >;
 
-            sensor-bindings = <&change_win>, <&inc_dec_kp UP_ARROW DOWN>;
+            sensor-bindings = <&none>, <&inc_dec_kp UP_ARROW DOWN>;
         };
 
         layer_3 {
