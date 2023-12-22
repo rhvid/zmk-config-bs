@@ -88,15 +88,6 @@
             tap-ms = <1>;
         };
 
-        aa: aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp>;
-            label = "AA";
-            tap-ms = <1>;
-            wait-ms = <0>;
-        };
-
         AA_: AA_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
