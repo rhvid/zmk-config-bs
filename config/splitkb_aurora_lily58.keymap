@@ -94,7 +94,7 @@
                                                  &trans             &trans         &trans         &trans    &trans  &trans     &trans    &trans
             >;
 
-            sensor-bindings = <&none>, <&inc_dec_kp UP_ARROW DOWN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp UP DOWN>;
         };
 
         layer_3 {
@@ -106,7 +106,7 @@
                         &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp LS(TAB) TAB>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp UP DOWN>;
         };
     };
 };
