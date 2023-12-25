@@ -59,11 +59,11 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                           &kp N6           &kp N7         &kp N8         &kp N9      &kp N0    &apos
-&kp TAB         &kp Q   &kp W   &kp E         &kp R     &kp T                            &kp Y            &kp U          &kp I          &kp O       &kp P     &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F     &kp G                            &kp H            &kp J          &kp K          &kp L       &kp SEMI  &kp APOS
-&kp LCTRL       &kp Z   &kp X   &kp C         &kp V     &kp B   &kp C_MUTE    &kp LC(W)  &kp N            &kp M          &kp COMMA      &kp PERIOD  &kp FSLH  &kp RIGHT_SHIFT
-                                &kp LEFT_ALT  &kp LGUI  &mo 1   &kp SPACE     &kp ENTER  &lt 2 BACKSPACE  &kp BACKSPACE  &kp RIGHT_ALT
+&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4            &kp N5                              &kp N6           &kp N7         &kp N8         &kp N9          &kp N0              &apos
+&kp TAB         &kp Q       &kp W       &kp E         &kp R             &kp T                               &kp Y            &kp U          &kp I          &kp O           &kp P               &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                               &kp H            &mt RSHFT J    &mt RCTRL K    &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
+&kp LCTRL       &kp Z       &kp X       &kp C         &kp V             &kp B      &kp C_MUTE    &kp LC(W)  &kp N            &kp M          &kp COMMA      &kp PERIOD      &kp FSLH            &kp RIGHT_SHIFT
+                                        &kp LEFT_ALT  &kp LGUI          &lt 1 TAB  &kp SPACE     &kp ENTER  &lt 2 BACKSPACE  &kp BACKSPACE  &kp RIGHT_ALT
             >;
 
             sensor-bindings =
