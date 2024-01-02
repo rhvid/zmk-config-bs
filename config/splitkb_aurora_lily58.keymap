@@ -109,7 +109,7 @@
 &ext_power EP_TOG  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &trans                      &bt BT_CLR                                &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
 &rgb_ug RGB_BRI    &trans        &kp PRINTSCREEN  &kp RA(N8)       &kp RA(N9)                  &trans                                    &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
 &rgb_ug RGB_BRD    &trans        &trans           &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                    &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
-&rgb_ug RGB_TOG    &DK_LESS      &DK_GREATER      &kp RA(N7)       &kp RA(N0)                  &kp BACKSLASH  &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
+&rgb_ug RGB_TOG    &DK_LESS      &kp LS(NUBS)     &kp RA(N7)       &kp RA(N0)                  &kp BACKSLASH  &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
                                                   &trans           &trans                      &trans         &rgb_ug RGB_EFF    &trans  &trans           &trans        &trans
             >;
 
@@ -120,11 +120,11 @@
 
         raise_layer {
             bindings = <
-&trans  &kp F1            &kp F2             &kp F3  &kp F4  &kp F5                    &kp F6     &kp F7    &kp F8          &kp F9         &kp F10    &kp DELETE
-&trans  &trans            &trans             &trans  &trans  &trans                    &kp F7     &kp HOME  &kp UP_ARROW    &kp END        &kp PG_UP  &kp F12
-&trans  &trans            &trans             &trans  &trans  &trans                    &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &kp TILDE
-&trans  &ext_power EP_ON  &ext_power EP_OFF  &trans  &trans  &trans  &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC   &kp PIPE
-                                             &trans  &trans  &mo 3   &trans    &trans  &trans     &trans    &trans
+&trans  &kp F1        &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6     &kp F7    &kp F8          &kp F9         &kp F10    &kp DELETE
+&trans  &trans        &trans  &trans  &trans  &trans                    &kp F7     &kp HOME  &kp UP_ARROW    &kp END        &kp PG_UP  &kp F12
+&trans  &trans        &trans  &trans  &trans  &trans                    &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &kp TILDE
+&trans  &kp RA(NUBS)  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC   &kp PIPE
+                              &trans  &trans  &mo 3   &trans    &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp UP DOWN>;
