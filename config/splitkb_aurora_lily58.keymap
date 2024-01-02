@@ -92,11 +92,11 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4            &kp N5                              &kp N6           &kp N7       &kp N8         &kp N9          &kp N0              &DK_APOS
-&kp TAB         &kp Q       &kp W       &kp E         &kp R             &kp T                               &kp Y            &kp U        &kp I          &kp O           &kp P               &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                               &kp H            &mt RSHFT J  &mt RCTRL K    &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
-&kp LCTRL       &kp Z       &kp X       &kp C         &kp V             &kp B      &kp C_MUTE    &kp LC(W)  &kp N            &kp M        &kp COMMA      &kp PERIOD      &kp FSLH            &mt RIGHT_SHIFT CAPSLOCK
-                                        &kp LEFT_ALT  &kp ESCAPE        &lt 1 TAB  &kp SPACE     &kp ENTER  &lt 2 BACKSPACE  &kp DEL      &kp RIGHT_ALT
+&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4            &kp N5                                        &kp N6           &kp N7       &kp N8         &kp N9          &kp N0              &DK_APOS
+&kp TAB         &kp Q       &kp W       &kp E         &kp R             &kp T                                         &kp Y            &kp U        &kp I          &kp O           &kp P               &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                                         &kp H            &mt RSHFT J  &mt RCTRL K    &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
+&kp LCTRL       &kp Z       &kp X       &kp C         &kp V             &kp B      &kp C_MUTE    &kp LC(PRINTSCREEN)  &kp N            &kp M        &kp COMMA      &kp PERIOD      &kp FSLH            &mt RIGHT_SHIFT CAPSLOCK
+                                        &kp LEFT_ALT  &kp ESCAPE        &lt 1 TAB  &kp SPACE     &kp ENTER            &lt 2 BACKSPACE  &kp DEL      &kp RIGHT_ALT
             >;
 
             sensor-bindings =
@@ -106,11 +106,11 @@
 
         lower_layer {
             bindings = <
-&ext_power EP_TOG  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &trans                      &bt BT_CLR                                &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
-&rgb_ug RGB_BRI    &trans        &kp PRINTSCREEN  &kp RA(N8)       &kp RA(N9)                  &trans                                    &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
-&rgb_ug RGB_BRD    &trans        &trans           &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                    &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
-&rgb_ug RGB_TOG    &DK_LESS      &kp LS(NUBS)     &kp RA(N7)       &kp RA(N0)                  &kp BACKSLASH  &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
-                                                  &trans           &trans                      &trans         &rgb_ug RGB_EFF    &trans  &trans           &trans        &trans
+&ext_power EP_TOG  &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &trans                      &bt BT_CLR                                &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
+&rgb_ug RGB_BRI    &trans         &kp PRINTSCREEN    &kp RA(N8)       &kp RA(N9)                  &trans                                    &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
+&rgb_ug RGB_BRD    &mt LGUI NUBS  &mt LALT LS(NUBS)  &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                    &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
+&rgb_ug RGB_TOG    &kp NUBS       &kp LS(NUBS)       &kp RA(N7)       &kp RA(N0)                  &kp BACKSLASH  &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
+                                                     &trans           &trans                      &trans         &rgb_ug RGB_EFF    &trans  &trans           &trans        &trans
             >;
 
             sensor-bindings =
