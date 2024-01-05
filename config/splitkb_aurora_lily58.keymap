@@ -18,10 +18,10 @@
 };
 
 &left_encoder {
-    steps = <144>;
+    steps = <72>;
 };
 &right_encoder {
-    steps = <144>;
+    steps = <72>;
 };
 
 &sensors {
