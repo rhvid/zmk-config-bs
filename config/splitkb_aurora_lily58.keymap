@@ -11,18 +11,14 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&led_strip {
-    chain-length = <29>;
-};
+&led_strip { chain-length = <29>; };
 
-&left_encoder {
-    steps = <72>;
-};
-&right_encoder {
-    steps = <72>;
-};
+&left_encoder { steps = <72>; };
+
+&right_encoder { steps = <72>; };
 
 &sensors {
     compatible = "zmk,keymap-sensors";
@@ -30,14 +26,9 @@
     triggers-per-rotation = <36>;
 };
 
-&mt {
-    flavor = "tap-preferred";
-};
+&mt { flavor = "tap-preferred"; };
 
 / {
-    behaviors {
-    };
-
     macros {
         /**
          * Temporarily switches to a layer (`&mo`) while a modifier is held.
@@ -113,9 +104,9 @@
 
         lower_layer {
             bindings = <
-&ext_power EP_TOG  &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &trans                      &bt BT_CLR                                &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
-&rgb_ug RGB_BRI    &trans         &kp PRINTSCREEN    &kp RA(N8)       &kp RA(N9)                  &trans                                    &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
-&rgb_ug RGB_BRD    &mt LGUI NUBS  &mt LALT LS(NUBS)  &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                    &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
+&out OUT_BLE       &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &trans                      &bt BT_CLR                                &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
+&out OUT_USB       &trans         &kp PRINTSCREEN    &kp RA(N8)       &kp RA(N9)                  &trans                                    &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
+&ext_power EP_OFF  &mt LGUI NUBS  &mt LALT LS(NUBS)  &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                    &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
 &rgb_ug RGB_TOG    &kp NUBS       &kp LS(NUBS)       &kp RA(N7)       &kp RA(N0)                  &kp BACKSLASH  &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
                                                      &trans           &trans                      &trans         &rgb_ug RGB_EFF    &trans  &trans           &trans        &trans
             >;
