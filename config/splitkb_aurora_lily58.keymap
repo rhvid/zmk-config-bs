@@ -26,7 +26,11 @@
     triggers-per-rotation = <36>;
 };
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    require-prior-idle-ms = <125>;
+    tapping-term-ms = <150>;
+};
 
 / {
     macros {
