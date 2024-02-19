@@ -4,17 +4,25 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
+/*
+* out commented 2024.02.19
+*
+* #include <dt-bindings/zmk/mouse.h>
+* #include <dt-bindings/zmk/backlight.h>
+* #include <dt-bindings/zmk/rgb.h>
+* #include <dt-bindings/zmk/ext_power.h>
+*/
+
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
+#include <behaviors.dtsi>
 
-&led_strip { chain-length = <29>; };
+/*
+* out commented 2024.02.19
+*
+* &led_strip { chain-length = <29>; };
+*/
 
 &left_encoder { steps = <72>; };
 
