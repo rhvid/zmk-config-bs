@@ -122,11 +122,11 @@
 
         lower_layer {
             bindings = <
-&out OUT_BLE       &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &trans                      &bt BT_CLR                                &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
-&out OUT_USB       &trans         &kp PRINTSCREEN    &kp RA(N8)       &kp RA(N9)                  &trans                                    &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
-&ext_power EP_OFF  &mt LGUI NUBS  &mt LALT LS(NUBS)  &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                    &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
-&rgb_ug RGB_TOG    &kp NUBS       &kp LS(NUBS)       &kp RA(N7)       &kp RA(N0)                  &kp BACKSLASH  &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
-                                                     &trans           &trans                      &trans         &rgb_ug RGB_EFF    &trans  &trans           &trans        &trans
+&out OUT_BLE       &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &trans                      &bt BT_CLR                             &kp EXCLAMATION  &kp N7        &kp N8  &kp N9  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
+&out OUT_USB       &trans         &kp PRINTSCREEN    &kp RA(N8)       &kp RA(N9)                  &trans                                 &kp UNDER        &kp NUMBER_4  &kp N5  &kp N6  &trans                   &trans
+&ext_power EP_OFF  &mt LGUI NUBS  &mt LALT LS(NUBS)  &mt LCTRL ASTRK  &mt LSHFT LEFT_PARENTHESIS  &trans                                 &kp LS(N0)       &kp N1        &kp N2  &kp N3  &kp KP_MINUS             &kp STAR
+&rgb_ug RGB_TOG    &kp NUBS       &kp LS(NUBS)       &kp RA(N7)       &kp RA(N0)                  &trans      &trans             &trans  &kp KP_PLUS      &kp N0        &trans  &trans  &trans                   &trans
+                                                     &trans           &trans                      &trans      &rgb_ug RGB_EFF    &trans  &trans           &trans        &trans
             >;
 
             sensor-bindings =
