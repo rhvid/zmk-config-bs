@@ -140,6 +140,28 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        to_layer_0 {
+            bindings = <&to 0>;
+            key-positions = <53 54>;
+            layers = <1>;
+        };
+
+        meh {
+            bindings = <&to 0>;
+            key-positions = <53 54>;
+            layers = <0>;
+        };
+
+        meh2 {
+            bindings = <&to 0>;
+            key-positions = <53 54>;
+            layers = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
