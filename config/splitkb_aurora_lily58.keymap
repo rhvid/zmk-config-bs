@@ -117,6 +117,27 @@
             #binding-cells = <0>;
             bindings = <&kp DEL>, <&to 1>;
         };
+
+        lt_tap_kp: lt_tap_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_TAP_KP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
+
+        mt_index_finger: mt_index_finger {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_INDEX_FINGER";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -124,11 +145,11 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4            &kp N5                                           &kp N6                     &kp N7       &kp N8         &kp N9          &kp N0              &DK_APOS
-&kp TAB         &kp Q       &kp W       &kp E         &kp R             &kp T                                            &kp Y                      &kp U        &kp I          &kp O           &kp P               &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                                            &kp H                      &mt RSHFT J  &mt RCTRL K    &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
-&kp LCTRL       &kp Z       &kp X       &kp C         &kp V             &kp B      &kp C_MUTE    &mt LC(N0) PRINTSCREEN  &kp N                      &kp M        &kp COMMA      &kp PERIOD      &kp FSLH            &mt RIGHT_SHIFT CAPSLOCK
-                                        &kp LEFT_ALT  &kp ESCAPE        &lt 1 TAB  &kp SPACE     &kp ENTER               &lt_backspace 2 BACKSPACE  &tap_dance   &mt RALT NUHS
+&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4                         &kp N5                                                  &kp N6                     &kp N7                    &kp N8         &kp N9          &kp N0              &DK_APOS
+&kp TAB         &kp Q       &kp W       &kp E         &kp R                          &kp T                                                   &kp Y                      &kp U                     &kp I          &kp O           &kp P               &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt_index_finger LEFT_SHIFT F  &kp G                                                   &kp H                      &mt_index_finger RSHFT J  &mt RCTRL K    &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
+&kp LCTRL       &kp Z       &kp X       &kp C         &kp V                          &kp B             &kp C_MUTE    &mt LC(N0) PRINTSCREEN  &kp N                      &kp M                     &kp COMMA      &kp PERIOD      &kp FSLH            &mt RIGHT_SHIFT CAPSLOCK
+                                        &kp LEFT_ALT  &kp ESCAPE                     &lt_tap_kp 1 TAB  &kp SPACE     &kp ENTER               &lt_backspace 2 BACKSPACE  &tap_dance                &mt RALT NUHS
             >;
 
             sensor-bindings =
