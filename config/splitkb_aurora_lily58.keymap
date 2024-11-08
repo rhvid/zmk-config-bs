@@ -167,7 +167,7 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4                         &kp N5                                                  &kp N6                     &kp N7                    &kp N8         &kp N9          &kp N0              &DK_APOS
+&kp ESC         &kp N1      &kp N2      &kp N3        &kp N4                         &kp N5                                                  &kp N6                     &kp N7                    &kp N8         &kp N9          &kp N0              &kp RBKT
 &kp TAB         &kp Q       &kp W       &kp E         &kp R                          &kp T                                                   &kp Y                      &kp U                     &kp I          &kp O           &kp P               &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt_index_finger LEFT_SHIFT F  &kp G                                                   &kp H                      &mt_index_finger RSHFT J  &mt RCTRL K    &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
 &kp LCTRL       &kp Z       &kp X       &kp C         &kp V                          &kp B             &kp C_MUTE    &mt LC(N0) PRINTSCREEN  &kp N                      &kp M                     &kp COMMA      &kp PERIOD      &kp FSLH            &mt RIGHT_SHIFT CAPSLOCK
