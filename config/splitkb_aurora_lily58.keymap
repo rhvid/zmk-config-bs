@@ -179,7 +179,7 @@
 &trans  &trans        &trans  &trans  &trans  &trans                    &kp F7     &kp HOME  &kp UP_ARROW    &kp END        &kp PG_UP  &kp F12
 &trans  &trans        &trans  &trans  &trans  &trans                    &kp CARET  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &kp TILDE
 &trans  &kp RA(NUBS)  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp END   &kp PLUS        &kp PAGE_DOWN  &kp RBRC   &kp PIPE
-                              &trans  &trans  &mo 3   &trans    &trans  &trans     &trans    &trans
+                              &trans  &trans  &to 3   &trans    &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp UP DOWN>;
@@ -187,11 +187,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(W)  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans
+&trans  &trans  &trans        &trans   &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &kp DELETE
+&trans  &trans  &kp N7        &kp N8   &kp N9        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp N5   &kp NUMBER_6  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1        &kp N2   &kp NUMBER_3  &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp DEL  &kp COMMA     &kp PERIOD  &trans    &trans  &trans  &to 0   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp UP DOWN>;
