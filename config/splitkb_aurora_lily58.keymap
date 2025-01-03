@@ -152,6 +152,16 @@
             bindings = <&to 3>;
             key-positions = <57 50>;
         };
+
+        toBT00 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <25 26 27 28>;
+        };
+
+        toBT01 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <31 32 33 34>;
+        };
     };
 
     keymap {
