@@ -189,7 +189,7 @@
         lower_layer {
             bindings = <
 &out OUT_BLE  &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &trans                                   &bt BT_CLR                    &trans      &trans        &trans        &trans        &trans       &trans
-&out OUT_USB  &trans         &trans             &kp RA(N8)       &kp RA(N9)                               &trans                        &kp UNDER   &kp N7        &kp N8        &kp N9        &trans       &trans
+&out OUT_USB  &trans         &trans             &kp RA(N8)       &kp RA(N9)                               &trans                        &kp UNDER   &kp N7        &kp N8        &kp N9        &kp PLUS     &trans
 &trans        &mt LGUI NUBS  &mt LALT LS(NUBS)  &mt LCTRL ASTRK  &mt_index_finger LSHFT LEFT_PARENTHESIS  &trans                        &kp LS(N0)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp PIPE
 &trans        &kp NUBS       &kp LS(NUBS)       &kp RA(N7)       &kp RA(N0)                               &trans      &trans    &trans  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans       &DK_PIPE
                                                 &kp DEL          &trans                                   &trans      &trans    &trans  &trans      &kp COMMA     &kp PERIOD
