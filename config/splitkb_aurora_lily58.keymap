@@ -162,6 +162,11 @@
             bindings = <&bt BT_SEL 1>;
             key-positions = <31 32 33 34>;
         };
+
+        outputToggle {
+            bindings = <&out OUT_TOG>;
+            key-positions = <25 26 27 28 31 32 33 34>;
+        };
     };
 
     keymap {
