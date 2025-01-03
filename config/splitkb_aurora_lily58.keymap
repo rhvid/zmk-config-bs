@@ -150,7 +150,7 @@
 
         toMouse {
             bindings = <&to 3>;
-            key-positions = <57 50>;
+            key-positions = <57 56>;
         };
 
         toBT00 {
@@ -166,6 +166,11 @@
         outputToggle {
             bindings = <&out OUT_TOG>;
             key-positions = <25 26 27 28 31 32 33 34>;
+        };
+
+        toBaseToo {
+            bindings = <&to 0>;
+            key-positions = <55 56>;
         };
     };
 
