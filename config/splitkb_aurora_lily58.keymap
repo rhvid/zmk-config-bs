@@ -172,6 +172,11 @@
             bindings = <&to 0>;
             key-positions = <55 56>;
         };
+
+        toMouseToo {
+            bindings = <&to 3>;
+            key-positions = <50 51>;
+        };
     };
 
     keymap {
