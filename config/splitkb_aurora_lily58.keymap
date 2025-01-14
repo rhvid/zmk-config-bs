@@ -177,6 +177,11 @@
             bindings = <&to 3>;
             key-positions = <50 51>;
         };
+
+        toBaseTooToo {
+            bindings = <&to 0>;
+            key-positions = <52 51>;
+        };
     };
 
     keymap {
