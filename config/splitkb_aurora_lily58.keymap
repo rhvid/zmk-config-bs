@@ -111,11 +111,13 @@
         ToBase {
             bindings = <&to 0>;
             key-positions = <52 55>;
+            layers = <0 1 2 3>;
         };
 
         toMouse {
             bindings = <&to 3>;
             key-positions = <57 56>;
+            layers = <0 1 2 3>;
         };
 
         toBT00 {
@@ -131,16 +133,19 @@
         toBaseToo {
             bindings = <&to 0>;
             key-positions = <55 56>;
+            layers = <0 1 2 3>;
         };
 
         toMouseToo {
             bindings = <&to 3>;
             key-positions = <50 51>;
+            layers = <0 1 2 3>;
         };
 
         toBaseTooToo {
             bindings = <&to 0>;
             key-positions = <52 51>;
+            layers = <3 1 0 2>;
         };
     };
 
